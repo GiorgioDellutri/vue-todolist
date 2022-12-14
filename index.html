@@ -38,7 +38,7 @@
                     <div class="col-12 d-flex justify-content-center">
                         <ul class="fs-4">
                             <li v-for="(element) in todo" class="p-3 my-4 d-flex justify-content-between"  >
-                                <span :class ="(element.done) ? 'strike-through' : '' ">{{element.text}}</span>
+                                <span @click="clickDone(todo)" :class ="(element.done) ? 'strike-through' : '' ">{{element.text}}</span>
                                 <p><i class="fa-solid fa-xmark" @click="removeItem(element)"></i></p>
                             </li>
                         </ul>

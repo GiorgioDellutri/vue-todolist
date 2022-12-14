@@ -22,10 +22,11 @@ createApp({
                     },
                     {
                         text:'Take money $',
-                        done: false 
+                        done: true 
                     },
                 ],
                 strikeThrough:'strike-through ',
+                strikeThrough : false
         }
     },
 
@@ -45,6 +46,9 @@ createApp({
         },
         clearUserInput(){
             this.newTodoItem= '';
+        },
+        clickDone(todo){
+            todo.done = !todo.done
         }
     }
 }).mount('#app')
