@@ -21,14 +21,27 @@ createApp({
                         done: true 
                     },
                     {
-                        text:'Farsi pagare $',
+                        text:'Take money $',
                         done: false 
                     },
                 ],
+                strikeThrough: false
         }
     },
 
     methods: {
+        removeItem(itemToRemove){
+            itemIndex = (this.todo.indexOf(itemToRemove))
+            if (itemIndex > -1){
+                this.todo.splice(itemIndex, 1)
+            }
+        },
+        addNewItem(inputUser){
+            this.todo.push({
+                text:inputUser,
+                done: false 
+            })
+        }
     }
 }).mount('#app')
 
