@@ -3,27 +3,26 @@ const {createApp} = Vue;
 createApp({
     data() {
         return{
-            activeIndex: 0,
-            slides : [
+            todo : [
                     {
-                        text: '',
-                        done:   
+                        text:'Creare sito web',
+                        done: false
                     }, 
                     {
-                        text: '',
-                        done:  
+                        text:'Sponsorizzare pagina',
+                        done: false
                     },
                     {
-                        text: '',
-                        done:  
+                        text:'Creare logo',
+                        done: true
                     },
                     {
-                        text: '',
-                        done:  
+                        text:'Comprare dominio',
+                        done: true 
                     },
                     {
-                        text: '',
-                        done:  
+                        text:'Farsi pagare $',
+                        done: false 
                     },
                 ],
         }
