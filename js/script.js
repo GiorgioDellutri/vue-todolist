@@ -6,7 +6,7 @@ createApp({
             todo : [
                     {
                         text:'Create website',
-                        done: false
+                        done: true
                     }, 
                     {
                         text:'Sponsor page',
@@ -22,7 +22,7 @@ createApp({
                     },
                     {
                         text:'Take money $',
-                        done: true 
+                        done: false 
                     },
                 ],
                 strikeThrough:'strike-through ',
