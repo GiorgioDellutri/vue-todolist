@@ -25,7 +25,7 @@ createApp({
                         done: false 
                     },
                 ],
-                strikeThrough: false
+                strikeThrough:'strike-through '
         }
     },
 
