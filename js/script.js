@@ -5,19 +5,19 @@ createApp({
         return{
             todo : [
                     {
-                        text:'Creare sito web',
+                        text:'Create website',
                         done: false
                     }, 
                     {
-                        text:'Sponsorizzare pagina',
+                        text:'Sponsor page',
                         done: false
                     },
                     {
-                        text:'Creare logo',
+                        text:'Create logos',
                         done: true
                     },
                     {
-                        text:'Comprare dominio',
+                        text:'Buy domain',
                         done: true 
                     },
                     {
@@ -25,7 +25,7 @@ createApp({
                         done: false 
                     },
                 ],
-                strikeThrough:'strike-through '
+                strikeThrough:'strike-through ',
         }
     },
 
@@ -37,10 +37,14 @@ createApp({
             }
         },
         addNewItem(inputUser){
+            this.clearUserInput();
             this.todo.push({
                 text:inputUser,
                 done: false 
             })
+        },
+        clearUserInput(){
+            this.newTodoItem= '';
         }
     }
 }).mount('#app')
